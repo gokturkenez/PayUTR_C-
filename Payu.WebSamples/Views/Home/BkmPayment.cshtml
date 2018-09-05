@@ -1,10 +1,11 @@
-﻿@model Payu.Core.Response.ApiPayment3DResponse
+﻿@model Payu.Core.Response.BkmPaymentResponse
 @using Payu.Core
 @using System.Xml.Linq
+@using Payu.Core.Response
 @{
-    ViewBag.Title = "Api İle Ödeme ";
+    ViewBag.Title = "BKM Express İle Ödeme ";
 }
-<h2>3D secure ile ödeme</h2>
+<h2>BKM Express İle Ödeme</h2>
 <fieldset>
     <legend><label style="font-weight:bold;width:250px;">Ürün Bilgileri</label></legend>
     <table class="table">
@@ -80,7 +81,7 @@
             <label style="font-weight:bold;">Şehir :</label> İstanbul <br>
             <label style="font-weight:bold;">İlçe :</label> Ayazağa <br>
             <label style="font-weight:bold;">Ülke Kodu :</label> TR <br>
-
+       
         </fieldset>
     </div>
 </div>
@@ -131,7 +132,7 @@
 
 
 
-    Taksit Sayısı
+    @*Taksit Sayısı
     <select name="installment">
         <option value="1">1</option>
         <option value="2">2</option>
@@ -145,13 +146,13 @@
         <option value="10">10</option>
         <option value="11">11</option>
         <option value="12">12</option>
-    </select>
+    </select>*@
 
     <!-- Button -->
     <div class="form-group">
         <label class="col-md-4 control-label" for=""></label>
         <div class="col-md-4">
-            <button type="submit" id="" name="" class="btn btn-success">3D Secure İle Ödeme</button>
+            <button type="submit" id="" name="" class="btn btn-success">BKM Express İle Ödeme</button>
         </div>
     </div>
 
